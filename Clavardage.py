@@ -86,7 +86,20 @@ def main():
         # Custom CSS to style the chat and remove the form border
         st.markdown("""
         <style>
-        footer {visibility: hidden;}
+            footer {
+          
+          visibility: hidden;
+          
+          }
+        footer:after {
+          content:'goodbye'; 
+          visibility: visible;
+          display: block;
+          position: relative;
+          #background-color: red;
+          padding: 5px;
+          top: 2px;
+        }
         .outer-frame {
             border: 2px solid #005EB8; /* Frame border color */
             border-radius: 15px;
