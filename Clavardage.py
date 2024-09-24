@@ -85,20 +85,7 @@ def main():
         # Custom CSS to style the chat and remove the form border
         st.markdown("""
         <style>
-            footer {
-          
-          visibility: hidden;
-          
-          }
-        footer:after {
-          content:'goodbye'; 
-          visibility: visible;
-          display: block;
-          position: relative;
-          #background-color: red;
-          padding: 5px;
-          top: 2px;
-        }
+
         .outer-frame {
             border: 2px solid #005EB8; /* Frame border color */
             border-radius: 15px;
@@ -223,7 +210,13 @@ def main():
 
 
 
-
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 def submit_input():
     user_input = st.session_state.user_input
