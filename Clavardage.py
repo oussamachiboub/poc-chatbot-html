@@ -270,5 +270,13 @@ hide_streamlit_style = """
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_css = """
+<style>
+section.stAppViewMain.main.st-emotion-cache-bm2z3a.ea3mdgi8 {
+    display: none;
+}
+</style>
+"""
+st.markdown(hide_css, unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
