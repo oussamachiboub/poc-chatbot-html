@@ -262,13 +262,8 @@ def send_request_to_custom_api(user_input):
 
 hide_streamlit_style = """
     <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    .viewerBadge_link__qRIco {visibility: hidden;}  /* This should target the footer specifically */
-    .stAppViewMain main st-emotion-cache-bm2z3a ea3mdgi8 {visibility: hidden;}  /* This should target the footer specifically */
-    viewerBadge_link__qRIco {visibility: hidden;}  /* This should target the footer specifically */
-    stAppViewMain main st-emotion-cache-bm2z3a ea3mdgi8 {visibility: hidden;}  /* This should target the footer specifically */
-
+    .viewerBadge_container__r5tak {visibility: hidden;}  /* Hides the entire badge including the link */
+    .viewerBadge_container__r5tak {display: none;}  /* Completely removes the badge */
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
