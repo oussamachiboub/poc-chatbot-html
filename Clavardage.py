@@ -86,6 +86,7 @@ def main():
         # Custom CSS to style the chat and remove the form border
         st.markdown("""
         <style>
+        footer {visibility: hidden;}
         .outer-frame {
             border: 2px solid #005EB8; /* Frame border color */
             border-radius: 15px;
@@ -260,16 +261,7 @@ def send_request_to_custom_api(user_input):
             #st.text(error.read().decode("utf8", 'ignore'))
             st.error("Oups ! Il semble que le filtre Microsoft a détecté du contenu inapproprié dans votre question. Veuillez reformuler votre question ou demander des informations sur le périmétre du POC. Merci ! ")
 
-hide_streamlit_style = """
-    <style>
-    .footer {visibility: hidden;}  /* Hides the badge but retains space */
-    .footer {display: none;}  /* Completely removes the badge */
-    footer {visibility: hidden;}  /* Hides the badge but retains space */
-    footer {display: none;}  /* Completely removes the badge */ 
 
-    </style>
-    """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
