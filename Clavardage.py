@@ -49,29 +49,28 @@ def main():
     # Start of the outer frame using a Streamlit container
 
 
-    with st.container("**Clavardage**"):
-        #st.markdown('<div class="outer-frame">', unsafe_allow_html=True)
-        if st.button("🗘 Nouvelle conversation"):
-            st.session_state.chat_history = []  # Reset chat history
-            st.session_state.chat_history.append({
-                "inputs": {"question": ""},
-                "outputs": {"answer": "Bonjour, Comment puis-je vous aider aujourd'hui? Sélectionnez un sujet ou écrivez votre question 😊"}
-            })
-            st.session_state.first_interaction = True  # Restart first interaction
-            st.session_state.user_input = ""  # Clear any existing input
-        if "first_interaction" not in st.session_state:
-            st.session_state.first_interaction = True
+    #st.markdown('<div class="outer-frame">', unsafe_allow_html=True)
+    if st.button("🗘 Nouvelle conversation"):
+        st.session_state.chat_history = []  # Reset chat history
+        st.session_state.chat_history.append({
+            "inputs": {"question": ""},
+            "outputs": {"answer": "Bonjour, Comment puis-je vous aider aujourd'hui? Sélectionnez un sujet ou écrivez votre question 😊"}
+        })
+        st.session_state.first_interaction = True  # Restart first interaction
+        st.session_state.user_input = ""  # Clear any existing input
+    if "first_interaction" not in st.session_state:
+        st.session_state.first_interaction = True
 
-        if "chat_history" not in st.session_state:
-            st.session_state.chat_history = []
-            st.session_state.chat_history.append({
-                "inputs": {"question": ""},
-                "outputs": {"answer": "Bonjour, Comment puis-je vous aider aujourd'hui? Sélectionnez un sujet ou écrivez votre question 😊"}
-            })
-        if "user_input" not in st.session_state:
-            st.session_state.user_input = ""
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = []
+        st.session_state.chat_history.append({
+            "inputs": {"question": ""},
+            "outputs": {"answer": "Bonjour, Comment puis-je vous aider aujourd'hui? Sélectionnez un sujet ou écrivez votre question 😊"}
+        })
+    if "user_input" not in st.session_state:
+        st.session_state.user_input = ""
 
-        # Add a "New Conversation" button at the top
+    # Add a "New Conversation" button at the top
 
 
 
