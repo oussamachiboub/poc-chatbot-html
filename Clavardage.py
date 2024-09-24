@@ -49,7 +49,7 @@ def main():
     # Start of the outer frame using a Streamlit container
 
 
-    with st.expander("**Clavardage**",expanded=True,icon=":material/chat:"):
+    with st.container("**Clavardage**"):
         #st.markdown('<div class="outer-frame">', unsafe_allow_html=True)
         if st.button("🗘 Nouvelle conversation"):
             st.session_state.chat_history = []  # Reset chat history
