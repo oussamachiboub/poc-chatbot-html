@@ -262,8 +262,11 @@ def send_request_to_custom_api(user_input):
 
 hide_streamlit_style = """
     <style>
-    .viewerBadge_text_fzr3E {visibility: hidden;}  /* Hides the text */
-    .viewerBadge_text_fzr3E {display: none;}  /* Completely removes the text */
+    .viewerBadge_container__r5tak {visibility: hidden;}  /* Hides the badge but retains space */
+    .viewerBadge_container__r5tak {display: none;}  /* Completely removes the badge */
+    viewerBadge_container__r5tak {visibility: hidden;}  /* Hides the badge but retains space */
+    viewerBadge_container__r5tak {display: none;}  /* Completely removes the badge */ 
+
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
