@@ -260,12 +260,13 @@ def send_request_to_custom_api(user_input):
             #st.text(error.read().decode("utf8", 'ignore'))
             st.error("Oups ! Il semble que le filtre Microsoft a détecté du contenu inapproprié dans votre question. Veuillez reformuler votre question ou demander des informations sur le périmétre du POC. Merci ! ")
 
-hide_menu_style = """
-        <style>
-        #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;
-        </style>
-        """
-st.markdown(hide_menu_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    viewerBadge_link__qRIco {visibility: hidden;}  /* This should target the footer specifically */
+    </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
