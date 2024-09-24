@@ -81,7 +81,7 @@ def main():
             st.image("https://i.imgur.com/JyPrR9l.png", width=80)   # Load and display the logo from the new URL
             
         with col2:
-            st.markdown("<h2 style='color:#005EB8; margin-top: 0; padding-top: 0;'>Assistant Virtuel Municipal</h2>", unsafe_allow_html=True)
+            st.markdown("<h1 style='color:#005EB8; margin-top: 0; padding-top: 0;'>Assistant Virtuel Municipal</h1>", unsafe_allow_html=True)
         
         # Custom CSS to style the chat and remove the form border
         st.markdown("""
@@ -173,8 +173,8 @@ def main():
                 <style>
 
                 div.stButton > button {
-                    width: 100px;  /* Apply the same width to all buttons */
-                    height: 40px;  /* Apply the same width to all buttons */
+                    width: 200px;  /* Apply the same width to all buttons */
+                    height: 60px;  /* Apply the same width to all buttons */
                 }
                 </style>
             """, unsafe_allow_html=True)
