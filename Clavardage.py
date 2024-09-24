@@ -262,8 +262,13 @@ def send_request_to_custom_api(user_input):
 
 hide_streamlit_style = """
     <style>
-    section {visibility: hidden;}  /* This will hide all section elements, you can be more specific if needed */
-    footer {visibility: hidden;}   /* Hide footer specifically if needed */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .viewerBadge_link__qRIco {visibility: hidden;}  /* This should target the footer specifically */
+    .stAppViewMain main st-emotion-cache-bm2z3a ea3mdgi8 {visibility: hidden;}  /* This should target the footer specifically */
+    viewerBadge_link__qRIco {visibility: hidden;}  /* This should target the footer specifically */
+    stAppViewMain main st-emotion-cache-bm2z3a ea3mdgi8 {visibility: hidden;}  /* This should target the footer specifically */
+
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
