@@ -266,6 +266,8 @@ hide_streamlit_style = """
     footer {visibility: hidden;}
     .viewerBadge_link__qRIco {visibility: hidden;}  /* This should target the footer specifically */
     .stAppViewMain main st-emotion-cache-bm2z3a ea3mdgi8 {visibility: hidden;}  /* This should target the footer specifically */
+    viewerBadge_link__qRIco {visibility: hidden;}  /* This should target the footer specifically */
+    stAppViewMain main st-emotion-cache-bm2z3a ea3mdgi8 {visibility: hidden;}  /* This should target the footer specifically */
 
     </style>
     """
