@@ -264,6 +264,8 @@ hide_streamlit_style = """
     <style>
     .viewerBadge_container__r5tak {visibility: hidden;}  /* Hides the entire badge including the link */
     .viewerBadge_container__r5tak {display: none;}  /* Completely removes the badge */
+    .viewerBadge_text_fzr3E {visibility: hidden;} 
+    .viewerBadge_text_fzr3E {display: none;} 
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
