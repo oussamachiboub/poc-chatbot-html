@@ -81,7 +81,7 @@ def main():
             st.image("https://i.imgur.com/JyPrR9l.png", width=80)   # Load and display the logo from the new URL
             
         with col2:
-            st.markdown("<h1 style='color:#005EB8; margin-top: 0; padding-top: 0;'>Assistant Virtuel Municipal  V2</h1>", unsafe_allow_html=True)
+            st.markdown("<h1 style='color:#005EB8; margin-top: 0; padding-top: 0;'>Assistant Virtuel Municipal</h1>", unsafe_allow_html=True)
         
         # Custom CSS to style the chat and remove the form border
         st.markdown("""
