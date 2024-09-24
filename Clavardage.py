@@ -262,21 +262,14 @@ def send_request_to_custom_api(user_input):
 
 hide_streamlit_style = """
     <style>
-    .viewerBadge_container__r5tak {visibility: hidden;}  /* Hides the badge but retains space */
-    .viewerBadge_container__r5tak {display: none;}  /* Completely removes the badge */
-    viewerBadge_container__r5tak {visibility: hidden;}  /* Hides the badge but retains space */
-    viewerBadge_container__r5tak {display: none;}  /* Completely removes the badge */ 
+    .footer {visibility: hidden;}  /* Hides the badge but retains space */
+    .footer {display: none;}  /* Completely removes the badge */
+    footer {visibility: hidden;}  /* Hides the badge but retains space */
+    footer {display: none;}  /* Completely removes the badge */ 
 
     </style>
     """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-hide_css = """
-<style>
-section.stAppViewMain.main.st-emotion-cache-bm2z3a.ea3mdgi8 {
-    display: none;
-}
-</style>
-"""
-st.markdown(hide_css, unsafe_allow_html=True)
+
 if __name__ == "__main__":
     main()
